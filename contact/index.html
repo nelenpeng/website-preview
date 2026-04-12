@@ -5,15 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         
         <meta name="description" content="Get in touch with our team." />
-        <meta name="author" content="Your Name" />
+        <meta name="author" content="" />
         
-        <title>Contact Us | Your best partner for wooden paddle and oars</title>
+        <title>Contact Us | China Largest wooden paddle oars factory</title>
         
-        <link rel="icon" type="image/x-icon" href="https://nelenpeng.github.io/website-preview/assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/website-preview/assets/favicon.ico" />
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         
-        <link href="https://nelenpeng.github.io/website-preview/css/styles.css" rel="stylesheet" />
+        <link href="/website-preview/css/styles.css" rel="stylesheet" />
+        
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Contact Us",
+    "description": "Get in touch with our team.",
+    "url": "https:\/\/nelenpeng.github.io\/website-preview\/contact\/"
+}
+</script>
+
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -25,7 +36,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="z-index:1030;">
   <div class="container px-5">
-    <a class="navbar-brand" href="https://nelenpeng.github.io/website-preview/">
+    <a class="navbar-brand" href="/">
       Your Trusted Wooden Paddle Supplier
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,26 +47,45 @@
         
           
           <li class="nav-item">
-            <a class="nav-link" href="https://nelenpeng.github.io/website-preview/">Home</a>
+            <a class="nav-link" href="/">Home</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="https://nelenpeng.github.io/website-preview/about">About</a>
+            <a class="nav-link" href="/about">About</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="https://nelenpeng.github.io/website-preview/products">Products</a>
+            <a class="nav-link" href="/products">Products</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="https://nelenpeng.github.io/website-preview/contact">Contact</a>
+            <a class="nav-link" href="/contact">Contact</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="https://nelenpeng.github.io/website-preview/faq">FAQ</a>
+            <a class="nav-link" href="/faq">FAQ</a>
           </li>
           
         
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            English
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+            
+              
+              <li><a class="dropdown-item" href="/website-preview/de/contact/" hreflang="de">Deutsch</a></li>
+              
+              <li><a class="dropdown-item" href="/website-preview/fr/contact/" hreflang="fr">Français</a></li>
+              
+              <li><a class="dropdown-item" href="/website-preview/es/contact/" hreflang="es">Español</a></li>
+              
+              <li><a class="dropdown-item" href="/website-preview/pt/contact/" hreflang="pt">Português</a></li>
+              
+            
+          </ul>
+        </li>
         
       </ul>
     </div>
@@ -189,35 +219,53 @@
 </section>
 
 
-  
-
-
-
-<section class="py-5">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="fw-bold"></h2>
-    </div>
-    <div class="rounded-3 overflow-hidden shadow">
-      
-        
-        
-          
-            
-          
-        
-        <iframe src="https://j.map.baidu.com/70/gVfM?scrollwheel=false" 
-                width="100%" 
-                height="400" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy"></iframe>
-      
-    </div>
+  <section class="py-5">
+  <div class="container"><div class="text-center mb-4">
+      <h2 class="fw-bold">Our Location</h2>
+    </div><div class="rounded-3 overflow-hidden shadow"><div id="smart-map-container" style="position: relative; width: 100%; height: 400px; cursor: pointer; background: #f0f0f0;">
+            <img id="map-placeholder" src="/website-preview/images/map-company-location_hu_441e9090588d70c1.webp" alt="Click to load interactive map" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div id="map-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3); transition: background 0.2s;">
+              <span style="background: white; color: #333; padding: 12px 24px; border-radius: 40px; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.15); pointer-events: none;">
+                <i class="bi bi-map"></i> Click to load interactive map
+              </span>
+            </div>
+          </div>
+          <script>
+            (function() {
+              var container = document.getElementById('smart-map-container');
+              if (!container) return;
+              var mapUrl = "https://j.map.baidu.com/70/gVfM?scrollwheel=false";
+              var height = "400";
+              
+              container.addEventListener('click', function loadMap(e) {
+                var iframe = document.createElement('iframe');
+                iframe.src = mapUrl;
+                iframe.width = '100%';
+                iframe.height = height;
+                iframe.style.border = '0';
+                iframe.setAttribute('allowfullscreen', '');
+                iframe.setAttribute('loading', 'lazy');
+                
+                container.innerHTML = '';
+                container.appendChild(iframe);
+                container.style.cursor = 'default';
+                container.style.background = 'transparent';
+                
+                container.removeEventListener('click', loadMap);
+              });
+              
+              container.addEventListener('mouseenter', function() {
+                var overlay = document.getElementById('map-overlay');
+                if (overlay) overlay.style.background = 'rgba(0,0,0,0.5)';
+              });
+              container.addEventListener('mouseleave', function() {
+                var overlay = document.getElementById('map-overlay');
+                if (overlay) overlay.style.background = 'rgba(0,0,0,0.3)';
+              });
+            })();
+          </script></div>
   </div>
 </section>
-
-
   </div>
 
 
@@ -237,19 +285,19 @@
           
           <li class="mb-2">
             
-              <a href="https://nelenpeng.github.io/website-preview/products/SWP-003" class="text-white-50 text-decoration-none">Basic Paddle</a>
+              <a href="/products/wooden-paddle/swp-003" class="text-white-50 text-decoration-none">Basic Paddle</a>
             
           </li>
           
           <li class="mb-2">
             
-              <a href="https://nelenpeng.github.io/website-preview/products/SWR-CR002" class="text-white-50 text-decoration-none">Mid-Range Paddle</a>
+              <a href="/products/wooden-paddle/swr-cr002" class="text-white-50 text-decoration-none">Mid-Range Paddle</a>
             
           </li>
           
           <li class="mb-2">
             
-              <a href="https://nelenpeng.github.io/website-preview/products/SWC-H004" class="text-white-50 text-decoration-none">Premium Paddle</a>
+              <a href="/products/canoe-paddle/swc-h004" class="text-white-50 text-decoration-none">Premium Paddle</a>
             
           </li>
           
@@ -262,19 +310,19 @@
           
           <li class="mb-2">
             
-              <a href="https://nelenpeng.github.io/website-preview/about" class="text-white-50 text-decoration-none">About Us</a>
+              <a href="/about" class="text-white-50 text-decoration-none">About Us</a>
             
           </li>
           
           <li class="mb-2">
             
-              <a href="https://nelenpeng.github.io/website-preview/contact" class="text-white-50 text-decoration-none">Contact</a>
+              <a href="/contact" class="text-white-50 text-decoration-none">Contact</a>
             
           </li>
           
           <li class="mb-2">
             
-              <a href="https://nelenpeng.github.io/website-preview/faq" class="text-white-50 text-decoration-none">Faq</a>
+              <a href="/faq" class="text-white-50 text-decoration-none">Faq</a>
             
           </li>
           
@@ -386,6 +434,6 @@
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         
-        <script src="https://nelenpeng.github.io/website-preview/js/scripts.js"></script>
+        <script src="/website-preview/js/scripts.js"></script>
     </body>
 </html>

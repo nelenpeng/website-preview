@@ -1,0 +1,71 @@
+
+
+# 公司故事
+story:
+  title: "Quiénes Somos"
+  paragraphs:
+    - "Fundada en 2015, somos el mayor fabricante de China dedicado exclusivamente a remos de madera para barcos y palas. Con una instalación de 4.000 m² y capacidad mensual de exportación de 2 a 3 contenedores high-cube de 40 pies, combinamos producción a escala industrial con artesanía para ofrecer remos de madera premium al mercado náutico mundial."
+    - "Como líder indiscutible en nuestro nicho, servimos a los minoristas y empresas de accesorios náuticos más reconocidos del mundo, incluyendo West Marine, Walmart, Canadian Tire y Beltema. Nuestra fortaleza radica en unir calidad superior con precios accesibles: ofrecemos un espectro completo de remos de madera de gama media a alta que cumplen con las rigurosas exigencias tanto de navegantes recreativos como de distribuidores profesionales."
+    - "Detrás de nuestro éxito hay un ecosistema de fabricación robusto respaldado por más de 10 alianzas con marcas y amplias capacidades de OEM/ODM. Desde la selección de la madera hasta el acabado final, cada remo de madera refleja nuestro compromiso con la durabilidad, el diseño ergonómico y la consistencia a gran escala."
+  image: "images/factory.jpg"
+  imageAlt: "Exhibición de Remos de Madera para Barcos"
+
+# 创新与质量卡片
+cards:
+  - icon: "bi-cpu"
+    title: "Calidad Premium a Precio Competitivo"
+    description: "Nos especializamos en ofrecer el equilibrio perfecto entre costo y rendimiento. Al optimizar nuestro flujo de producción y aprovechar economías de escala, ofrecemos remos de madera de gama media a alta a precios que superan las expectativas del mercado sin comprometer la artesanía."
+  - icon: "bi-award"
+    title: "Excelencia OEM/ODM Certificada"
+    description: "Con más de 10 alianzas activas con marcas, somos la columna vertebral de fabricación confiable detrás de muchos nombres de accesorios náuticos. Nuestra experiencia en OEM y ODM nos permite ejecutar diseños personalizados, etiquetado privado y control de calidad estricto, asegurando que su marca reciba productos consistentes y fiables en cada envío."
+
+# 团队数字
+team_number:
+  title: "Nuestra Fortaleza en Números"
+  items:
+    - value: "4000+"
+      label: "Instalación de Producción (m²)"
+    - value: "2-3"
+      label: "Contenedores 40FT HQ / Mes"
+    - value: "10+"
+      label: "Socios de Marca Activos"
+    - value: "Global"
+      label: "Minoristas en Todo el Mundo"
+
+# OEM/ODM 与全球影响力
+global:
+  icon: "bi-globe-asia"
+  title: "Su Socio OEM/ODM Premium en Accesorios Náuticos"
+  lead: "Como el mayor fabricante de remos de madera de China, no solo producimos: nos asociamos. Nuestros servicios OEM y ODM ofrecen soluciones integrales, desde el abastecimiento de materia prima y acabado personalizado de madera hasta el diseño de embalaje y logística. Trabajamos codo a codo con minoristas globales y marcas náuticas para convertir sus especificaciones en productos listos para el mercado."
+  description: "Nuestra red de exportación abarca Norteamérica, Europa y más allá, sirviendo a líderes del sector como West Marine, Walmart, Canadian Tire y Beltema. Ya sea que necesite reposición de alto volumen o un diseño personalizado único, entregamos con estabilidad, cumplimiento y confiabilidad en la cadena de suministro."
+
+# 工厂展示
+factoryTour:
+  title: "Recorrido por la Fábrica"
+  mode: "grid"
+  cols: 2
+  items:
+    - name: "Taller de Producción"
+      image: "images/factory/1.jpg"
+      description: "Una instalación de 4.000 m² equipada con líneas de montaje dedicadas para pedidos de gran volumen, asegurando una producción constante de 2 a 3 contenedores por mes."
+    - name: "Carpintería Avanzada"
+      image: "images/factory/2.jpg"
+      description: "Estaciones de corte, modelado y lijado de precisión que mantienen tolerancias estrictas para diseños ergonómicos y duraderos de remos de madera."
+    - name: "Unión Encolada y Formación"
+      image: "images/factory/3.jpg"
+      description: "Máquinas automatizadas de encolado y formación aseguran una adherencia precisa a las especificaciones de diseño para contornos consistentes de los remos de madera."
+    - name: "Línea de Curvado y Cepillado"
+      image: "images/factory/4.jpg"
+      description: "La máquina curvadora da forma al contorno estructural del remo de madera, mientras que cepilladoras y lijadoras refinan las superficies para lograr suavidad y uniformidad."
+    - name: "Pulverización Automática"
+      image: "images/factory/5.jpg"
+      description: "Sistema automatizado de pulverización que proporciona un recubrimiento y acabado uniformes para una apariencia de alta calidad."
+    - name: "Línea de Empaque"
+      image: "images/factory/6.jpg"
+      description: "Máquinas de empaque eficientes agilizan el embalaje final, mejorando la velocidad de envío y la eficiencia operativa."
+    - name: "Control de Calidad Estricto"
+      image: "images/factory/7.jpg"
+      description: "Cada remo de madera pasa por verificaciones de integridad de la veta, pruebas de durabilidad del barniz y validación de consistencia de peso antes del embalaje."
+    - name: "Almacén y Logística"
+      image: "images/factory/8.jpg"
+      description: "Sistema de inventario gestionado por ERP que soporta la carga de contenedores de alto volumen, garantizando la entrega puntual a minoristas globales."

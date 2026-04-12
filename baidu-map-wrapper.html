@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 注意：此 iframe 加载百度地图，添加 sandbox 属性进一步限制能力 -->
+    <iframe id="baidu-inner" 
+            src="https://j.map.baidu.com/70/gVfM"
+            sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+            allowfullscreen
+            loading="lazy">
+    </iframe>
+    <script>
+        // 更彻底的滚动劫持
+        (function() {
+            // 禁止所有可能引发滚动的原生方法
+            const noScroll = function() {};
+            
+            // 覆盖 Element 原型上的滚动相关方法
+            Element.prototype.scrollIntoView = noScroll;
+            Element.prototype.scrollIntoViewIfNeeded = noScroll;
+            Element.prototype.scrollBy = noScroll;
+            Element.prototype.scrollTo = noScroll;
+            
+            // 覆盖 window 对象上的方法
+            window.scroll = noScroll;
+            window.scrollTo = noScroll;
+            window.scrollBy = noScroll;
+            
+            // 阻止任何通过 focus 导致的滚动（最关键）
+            const originalFocus = HTMLElement.prototype.focus;
+            HTMLElement.prototype.focus = function(options) {
+                // 强制传入 preventScroll: true
+                originalFocus.call(this, { preventScroll: true });
+            };
+            
+            // 禁止键盘上下左右键滚动
+            window.addEventListener('keydown', function(e) {
+                const keys = [32, 33, 34, 35, 36, 37, 38, 39, 40];
+                if (keys.includes(e.keyCode)) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
+            
+            // 确保页面加载后始终在顶部
+            window.addEventListener('load', function() {
+                window.scrollTo(0, 0);
+            });
+            
+            // 定期强制置顶（对抗异步加载的脚本）
+            let lockTimer = setInterval(function() {
+                window.scrollTo(0, 0);
+            }, 100);
+            setTimeout(function() {
+                clearInterval(lockTimer);
+            }, 2000);
+        })();
+    </script>
+</body>
+</html>
